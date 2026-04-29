@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Event Booking Form</h2>
+    <form>
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone" placeholder="Enter your phone number" required>
+
+        <label>Event Type</label>
+        <select name="event" required>
+            <option value="">Select event</option>
+            <option value="wedding">Wedding</option>
+            <option value="birthday">Birthday</option>
+            <option value="conference">Conference</option>
+            <option value="party">Party</option>
+        </select>
+
+        <label>Event Date</label>
+        <input type="date" name="date" required>
+
+        <label>Number of Guests</label>
+        <input type="number" name="guests" placeholder="Enter number of guests" required>
+
+        <label>Additional Notes</label>
+        <textarea name="notes" rows="4" placeholder="Any special requests..."></textarea>
+
+        <button type="submit">Book Event</button>
+    </form>
+</div>
+
+</body>
+</html>
