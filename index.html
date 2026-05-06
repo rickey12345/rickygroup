@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beta Tech Solutions — Home</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+    .container {
+      background: #fff;
+      border-radius: 12px;
+      padding: 3rem 2rem;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      width: 100%;
+    }
+    .header {
+      margin-bottom: 2rem;
+    }
+    .header h1 {
+      font-size: 32px;
+      color: #111;
+      margin-bottom: 0.5rem;
+    }
+    .header p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+    .location {
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 2rem;
+    }
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .nav-btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      border: none;
+      transition: all 0.3s ease;
+    }
+    .nav-btn.primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+    }
+    .nav-btn.primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    }
+    .nav-btn.secondary {
+      background: #f0f0f0;
+      color: #333;
+      border: 1px solid #ddd;
+    }
+    .nav-btn.secondary:hover {
+      background: #e8e8e8;
+      border-color: #999;
+    }
+    .divider {
+      margin: 2rem 0;
+      color: #ddd;
+      font-weight: 300;
+    }
+    .footer {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #eee;
+      font-size: 12px;
+      color: #999;
+    }
+    @media (max-width: 540px) {
+      .container {
+        padding: 2rem 1.5rem;
+      }
+      .header h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Beta Tech Solutions</h1>
+      <p>Innovative technology solutions for your business</p>
+      <div class="location">📍 Musanze District</div>
+    </div>
+
+    <div class="nav-links">
+      <a href="product.html" class="nav-btn primary">Register Product</a>
+      <div class="divider">or</div>
+      <a href="feedback.html" class="nav-btn secondary">Submit Feedback</a>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2026 Beta Tech Solutions Ltd. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>

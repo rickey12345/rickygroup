@@ -202,7 +202,10 @@
         showMsg('Please confirm that the information is accurate.', 'error');
         return;
       }
-      showMsg('Product registered successfully!', 'success');
+      showMsg('Product registered successfully! Redirecting...', 'success');
+      setTimeout(() => {
+        window.location.href = 'products.html';
+      }, 1500);
     }
 
     function showMsg(text, type) {
