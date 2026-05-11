@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Booking Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            padding: 40px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .confirmed {
+            color: green;
+            font-weight: bold;
+        }
+
+        .pending {
+            color: orange;
+            font-weight: bold;
+        }
+
+        .cancelled {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Event Booking List</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Event Booked</th>
+            <th>Date</th>
+            <th>Confirmation</th>
+        </tr>
+
+        <tr>
+            <td>John Doe</td>
+            <td>Music Festival</td>
+            <td>2026-05-10</td>
+            <td class="confirmed">Confirmed</td>
+        </tr>
+
+        <tr>
+            <td>Jane Smith</td>
+            <td>Tech Conference</td>
+            <td>2026-06-02</td>
+            <td class="pending">Pending</td>
+        </tr>
+
+        <tr>
+            <td>Michael Brown</td>
+            <td>Art Exhibition</td>
+            <td>2026-05-20</td>
+            <td class="cancelled">Cancelled</td>
+        </tr>
+
+        <tr>
+            <td>Sarah Wilson</td>
+            <td>Startup Meetup</td>
+            <td>2026-05-15</td>
+            <td class="confirmed">Confirmed</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
